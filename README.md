@@ -1,22 +1,22 @@
-# eosjs ![npm](https://img.shields.io/npm/dw/eosjs.svg)
+# leopaysjs ![npm](https://img.shields.io/npm/dw/leopaysjs.svg)
 
-Javascript API for integration with EOSIO-based blockchains using [EOSIO RPC API](https://developers.eos.io/eosio-nodeos/reference).
+Javascript API for integration with LEOPAYS-based blockchains using [LEOPAYS RPC API](https://developers.leopays.dev/leopay-node/reference).
 
-Documentation can be found [here](https://eosio.github.io/eosjs)
+Documentation can be found [here](https://leopays-core.github.io/leopaysjs)
 
 ## Installation
 
 ### NPM
 
-The official distribution package can be found at [npm](https://www.npmjs.com/package/eosjs).
+The official distribution package can be found at [npm](https://www.npmjs.com/package/leopaysjs).
 
 ### Add dependency to your project
 
-`yarn add eosjs`
+`yarn add leopaysjs`
 
 ### Browser Distribution
 
-Clone this repository locally then run `yarn build-web`.  The browser distribution will be located in `dist-web` and can be directly copied into your project repository. The `dist-web` folder contains minified bundles ready for production, along with source mapped versions of the library for debugging.  For full browser usage examples, [see the documentation](https://eosio.github.io/eosjs/guides/1.-Browsers.html).
+Clone this repository locally then run `yarn build-web`.  The browser distribution will be located in `dist-web` and can be directly copied into your project repository. The `dist-web` folder contains minified bundles ready for production, along with source mapped versions of the library for debugging.  For full browser usage examples, [see the documentation](https://leopays-core.github.io/leopaysjs/guides/1.-Browsers.html).
 
 ## Import
 
@@ -24,16 +24,16 @@ Clone this repository locally then run `yarn build-web`.  The browser distributi
 
 Importing using ESM syntax is supported using TypeScript, [webpack](https://webpack.js.org/api/module-methods), or  [Node.js with `--experimental-modules` flag](https://nodejs.org/api/esm.html)
 ```js
-import { Api, JsonRpc, RpcError } from 'eosjs';
-import { JsSignatureProvider } from 'eosjs/dist/eosjs-jssig';           // development only
+import { Api, JsonRpc, RpcError } from 'leopaysjs';
+import { JsSignatureProvider } from 'leopaysjs/dist/eosjs-jssig';           // development only
 ```
 
 ### CommonJS
 
 Importing using commonJS syntax is supported by Node.js out of the box.
 ```js
-const { Api, JsonRpc, RpcError } = require('eosjs');
-const { JsSignatureProvider } = require('eosjs/dist/eosjs-jssig');      // development only
+const { Api, JsonRpc, RpcError } = require('leopaysjs');
+const { JsSignatureProvider } = require('leopaysjs/dist/eosjs-jssig');      // development only
 const fetch = require('node-fetch');                                    // node only; not needed in browsers
 const { TextEncoder, TextDecoder } = require('util');                   // node only; native TextEncoder/Decoder
 const { TextEncoder, TextDecoder } = require('text-encoding');          // React Native, IE11, and Edge Browsers only
@@ -74,7 +74,7 @@ const api = new Api({ rpc, signatureProvider, textDecoder: new TextDecoder(), te
 (async () => {
   const result = await api.transact({
     actions: [{
-      account: 'eosio.token',
+      account: 'lpc.token',
       name: 'transfer',
       authorization: [{
         actor: 'useraaaaaaaa',
@@ -83,7 +83,7 @@ const api = new Api({ rpc, signatureProvider, textDecoder: new TextDecoder(), te
       data: {
         from: 'useraaaaaaaa',
         to: 'useraaaaaaab',
-        quantity: '0.0001 SYS',
+        quantity: '0.0001 LPC',
         memo: '',
       },
     }]
@@ -123,4 +123,4 @@ try {
 
 ## Important
 
-See LICENSE for copyright and license terms.  Block.one makes its contribution on a voluntary basis as a member of the EOSIO community and is not responsible for ensuring the overall performance of the software or any related applications.  We make no representation, warranty, guarantee or undertaking in respect of the software or any related documentation, whether expressed or implied, including but not limited to the warranties or merchantability, fitness for a particular purpose and noninfringement. In no event shall we be liable for any claim, damages or other liability, whether in an action of contract, tort or otherwise, arising from, out of or in connection with the software or documentation or the use or other dealings in the software or documentation.  Any test results or performance figures are indicative and will not reflect performance under all conditions.  Any reference to any third party or third-party product, service or other resource is not an endorsement or recommendation by Block.one.  We are not responsible, and disclaim any and all responsibility and liability, for your use of or reliance on any of these resources. Third-party resources may be updated, changed or terminated at any time, so the information here may be out of date or inaccurate.
+See LICENSE for copyright and license terms.  Block.one makes its contribution on a voluntary basis as a member of the LEOPAYS community and is not responsible for ensuring the overall performance of the software or any related applications.  We make no representation, warranty, guarantee or undertaking in respect of the software or any related documentation, whether expressed or implied, including but not limited to the warranties or merchantability, fitness for a particular purpose and noninfringement. In no event shall we be liable for any claim, damages or other liability, whether in an action of contract, tort or otherwise, arising from, out of or in connection with the software or documentation or the use or other dealings in the software or documentation.  Any test results or performance figures are indicative and will not reflect performance under all conditions.  Any reference to any third party or third-party product, service or other resource is not an endorsement or recommendation by Block.one.  We are not responsible, and disclaim any and all responsibility and liability, for your use of or reliance on any of these resources. Third-party resources may be updated, changed or terminated at any time, so the information here may be out of date or inaccurate.
