@@ -29,7 +29,6 @@
   },
   "dependencies": {
     "babel-runtime": "6.26.0",
-    "leopaysjs-ecc": "https://github.com/leopays-core/leopaysjs-ecc.git",
     "text-encoding": "0.7.0"
   },
   "devDependencies": {
