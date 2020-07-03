@@ -1,6 +1,6 @@
 {
   "name": "leopaysjs",
-  "version": "20.0.3",
+  "version": "0.1.0",
   "description": "Talk to LEOPAYS API",
   "main": "dist/index.js",
   "scripts": {
