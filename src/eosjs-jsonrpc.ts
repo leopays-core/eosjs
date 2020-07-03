@@ -1,7 +1,7 @@
 /**
  * @module JSON-RPC
  */
-// copyright defined in eosjs/LICENSE.txt
+// copyright defined in leopaysjs/LICENSE.txt
 
 import { AbiProvider, AuthorityProvider, AuthorityProviderArgs, BinaryAbi } from './eosjs-api-interfaces';
 import { base64ToBinary, convertLegacyPublicKeys } from './eosjs-numeric';

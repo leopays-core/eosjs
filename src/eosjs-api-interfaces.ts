@@ -1,4 +1,4 @@
-// copyright defined in eosjs/LICENSE.txt
+// copyright defined in leopaysjs/LICENSE.txt
 
 import { Abi, PushTransactionArgs } from './eosjs-rpc-interfaces';
 

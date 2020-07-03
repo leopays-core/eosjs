@@ -1,14 +1,14 @@
 const { JsonRpc, RpcError, Api } = require('../../dist');
-const { JsSignatureProvider } = require('../../dist/eosjs-jssig');
+const { JsSignatureProvider } = require('../../dist/leopaysjs-jssig');
 const fetch = require('node-fetch');
 const { TextEncoder, TextDecoder } = require('util');
 
 const privateKey = '5JuH9fCXmU3xbj8nRmhPZaVrxxXrdPaRmZLW1cznNTmTQR2Kg5Z'; // replace with "bob" account private key
-/* new accounts for testing can be created by unlocking a cleos wallet then calling: 
- * 1) cleos create key --to-console (copy this privateKey & publicKey)
- * 2) cleos wallet import 
- * 3) cleos create account bob publicKey
- * 4) cleos create account alice publicKey
+/* new accounts for testing can be created by unlocking a leopays-cli wallet then calling: 
+ * 1) leopays-cli create key --to-console (copy this privateKey & publicKey)
+ * 2) leopays-cli wallet import 
+ * 3) leopays-cli create account bob publicKey
+ * 4) leopays-cli create account alice publicKey
  */
 
 const rpc = new JsonRpc('http://localhost:8888', { fetch });
@@ -17,7 +17,7 @@ const api = new Api({ rpc, signatureProvider, textDecoder: new TextDecoder(), te
 
 const transactWithConfig = async () => await api.transact({
     actions: [{
-        account: 'eosio.token',
+        account: 'lpc.token',
         name: 'transfer',
         authorization: [{
             actor: 'bob',
@@ -26,7 +26,7 @@ const transactWithConfig = async () => await api.transact({
         data: {
             from: 'bob',
             to: 'alice',
-            quantity: '0.0001 SYS',
+            quantity: '0.0001 LPC',
             memo: '',
         },
     }]
@@ -48,7 +48,7 @@ const transactWithoutConfig = async () => {
         ref_block_num: blockInfo.block_num & 0xffff,
         ref_block_prefix: blockInfo.ref_block_prefix,
         actions: [{
-            account: 'eosio.token',
+            account: 'lpc.token',
             name: 'transfer',
             authorization: [{
                 actor: 'bob',
@@ -57,7 +57,7 @@ const transactWithoutConfig = async () => {
             data: {
                 from: 'bob',
                 to: 'alice',
-                quantity: '0.0001 SYS',
+                quantity: '0.0001 LPC',
                 memo: '',
             },
         }]
@@ -67,7 +67,7 @@ const transactWithoutConfig = async () => {
 
 const transactWithoutBroadcast = async () => await api.transact({
   actions: [{
-        account: 'eosio.token',
+        account: 'lpc.token',
         name: 'transfer',
         authorization: [{
             actor: 'bob',
@@ -76,7 +76,7 @@ const transactWithoutBroadcast = async () => await api.transact({
         data: {
             from: 'bob',
             to: 'alice',
-            quantity: '0.0001 SYS',
+            quantity: '0.0001 LPC',
             memo: '',
         },
     }]
@@ -90,7 +90,7 @@ const broadcastResult = async (signaturesAndPackedTransaction) => await api.push
 
 const transactShouldFail = async () => await api.transact({
     actions: [{
-        account: 'eosio.token',
+        account: 'lpc.token',
         name: 'transfer',
         authorization: [{
             actor: 'bob',
@@ -99,7 +99,7 @@ const transactShouldFail = async () => await api.transact({
         data: {
             from: 'bob',
             to: 'alice',
-            quantity: '0.0001 SYS',
+            quantity: '0.0001 LPC',
             memo: '',
         },
     }]

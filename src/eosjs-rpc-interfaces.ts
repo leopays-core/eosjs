@@ -1,4 +1,4 @@
-// copyright defined in eosjs/LICENSE.txt
+// copyright defined in leopaysjs/LICENSE.txt
 
 /** Structured format for abis */
 export interface Abi {

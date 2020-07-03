@@ -1,7 +1,7 @@
 /**
  * @module API
  */
-// copyright defined in eosjs/LICENSE.txt
+// copyright defined in leopaysjs/LICENSE.txt
 
 import { AbiProvider, AuthorityProvider, BinaryAbi, CachedAbi, SignatureProvider } from './eosjs-api-interfaces';
 import { JsonRpc } from './eosjs-jsonrpc';

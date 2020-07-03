@@ -1,7 +1,7 @@
 /**
  * @module Numeric
  */
-// copyright defined in eosjs/LICENSE.txt
+// copyright defined in leopaysjs/LICENSE.txt
 
 const ripemd160 = require('./ripemd').RIPEMD160.hash as (a: Uint8Array) => ArrayBuffer;
 
@@ -273,7 +273,7 @@ export function stringToPublicKey(s: string): Key {
     if (typeof s !== 'string') {
         throw new Error('expected string containing public key');
     }
-    if (s.substr(0, 3) === 'EOS') {
+    if (s.substr(0, 3) === 'LPC') {
         const whole = base58ToBinary(publicKeyDataSize + 4, s.substr(3));
         const key = { type: KeyType.k1, data: new Uint8Array(publicKeyDataSize) };
         for (let i = 0; i < publicKeyDataSize; ++i) {
@@ -305,17 +305,17 @@ export function publicKeyToString(key: Key) {
     }
 }
 
-/** If a key is in the legacy format (`EOS` prefix), then convert it to the new format (`PUB_K1_`).
+/** If a key is in the legacy format (`LPC` prefix), then convert it to the new format (`PUB_K1_`).
  * Leaves other formats untouched
  */
 export function convertLegacyPublicKey(s: string) {
-    if (s.substr(0, 3) === 'EOS') {
+    if (s.substr(0, 3) === 'LPC') {
         return publicKeyToString(stringToPublicKey(s));
     }
     return s;
 }
 
-/** If a key is in the legacy format (`EOS` prefix), then convert it to the new format (`PUB_K1_`).
+/** If a key is in the legacy format (`LPC` prefix), then convert it to the new format (`PUB_K1_`).
  * Leaves other formats untouched
  */
 export function convertLegacyPublicKeys(keys: string[]) {

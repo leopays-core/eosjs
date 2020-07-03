@@ -1,7 +1,7 @@
 /**
  * @module Serialize
  */
-// copyright defined in eosjs/LICENSE.txt
+// copyright defined in leopaysjs/LICENSE.txt
 
 import * as numeric from './eosjs-numeric';
 import { Abi, BlockTaposInfo } from './eosjs-rpc-interfaces';

@@ -21,7 +21,7 @@
     "docs-serve": "python -m SimpleHTTPServer",
     "docs-publish": "sh .docs/scripts/publish.sh"
   },
-  "author": "block.one",
+  "author": "leopays.com",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -29,7 +29,7 @@
   },
   "dependencies": {
     "babel-runtime": "6.26.0",
-    "eosjs-ecc": "https://github.com/leopays-core/leopaysjs-ecc.git",
+    "leopaysjs-ecc": "https://github.com/leopays-core/leopaysjs-ecc.git",
     "text-encoding": "0.7.0"
   },
   "devDependencies": {

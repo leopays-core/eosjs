@@ -1,9 +1,9 @@
 /**
  * @module JS-Sig
  */
-// copyright defined in eosjs/LICENSE.txt
+// copyright defined in leopaysjs/LICENSE.txt
 
-import * as ecc from 'eosjs-ecc';
+import * as ecc from 'leopaysjs-ecc';
 import { SignatureProvider, SignatureProviderArgs } from './eosjs-api-interfaces';
 import { convertLegacyPublicKey } from './eosjs-numeric';
 
