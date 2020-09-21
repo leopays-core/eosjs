@@ -1,4 +1,4 @@
-const ecc = require('leopaysjs-ecc');
+const ecc = require('@leopays-core/leopaysjs-ecc');
 import { ecc as eccMigration } from '../eosjs-ecc-migration';
 
 import { PrivateKey } from '../eosjs-key-conversions';

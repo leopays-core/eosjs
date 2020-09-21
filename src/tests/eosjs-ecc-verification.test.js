@@ -1,5 +1,5 @@
-// leopaysjs-ecc stuff
-const ecc = require('leopaysjs-ecc');
+// @leopays-core/leopaysjs-ecc stuff
+const ecc = require('@leopays-core/leopaysjs-ecc');
 
 const { ec } = require('elliptic');
 
@@ -39,7 +39,7 @@ describe('JsSignatureProvider', () => {
 
   // These are simplified tests simply to verify a refactor didn't mess with existing code
 
-  it('(NOTE: sigs are different): ensure elliptic does what leopaysjs-ecc used to do', () => {
+  it('(NOTE: sigs are different): ensure elliptic does what @leopays-core/leopaysjs-ecc used to do', () => {
     const ellipticEc = new ec('secp256k1');
     for (let idx = 0; idx < privateKeys.length; idx++) {
       const KPriv = privateKeys[idx];
@@ -77,7 +77,7 @@ describe('JsSignatureProvider', () => {
     }
   });
 
-  it('ensure elliptic verifies leopaysjs-ecc\'s Sigs', () => {
+  it('ensure elliptic verifies @leopays-core/leopaysjs-ecc\'s Sigs', () => {
     const ellipticEc = new ec('secp256k1');
     for (let idx = 0; idx < privateKeys.length; idx++) {
       const KPriv = privateKeys[idx];
@@ -144,7 +144,7 @@ describe('JsSignatureProvider', () => {
     }
   });
 
-  it('ensure leopaysjs verifies leopaysjs-ecc\'s Sigs', () => {
+  it('ensure leopaysjs verifies @leopays-core/leopaysjs-ecc\'s Sigs', () => {
     for (let idx = 0; idx < privateKeys.length; idx++) {
       const KPriv = privateKeys[idx];
       const privateKey = PrivateKey.fromString(KPriv);
