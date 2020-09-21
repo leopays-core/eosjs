@@ -1,0 +1,22 @@
+{
+  "name": "leopaysjs",
+  "generators": [
+    {
+      "name": "collate_markdown",
+      "options": {
+        "docs_dir": "docs"
+      }
+    },
+    {
+      "name": "typedoc",
+      "options": {
+        "disable_default_filters": true,
+        "filters": [
+          {
+            "name": "remove_extension"
+          }
+        ]
+      }
+    }
+  ]
+}
