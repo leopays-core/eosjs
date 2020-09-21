@@ -1,7 +1,7 @@
-To import `leopaysjs` using commonjs syntax follow the code below.
+To import `@leopays-core/leopaysjs` using commonjs syntax follow the code below.
 ```javascript
-const { Api, JsonRpc } = require('leopaysjs');
-const { JsSignatureProvider } = require('leopaysjs/dist/leopaysjs-jssig');  // development only
+const { Api, JsonRpc } = require('@leopays-core/leopaysjs');
+const { JsSignatureProvider } = require('@leopays-core/leopaysjs/dist/leopaysjs-jssig');  // development only
 const fetch = require('node-fetch'); //node only
 const { TextDecoder, TextEncoder } = require('util'); //node only
 

@@ -1,9 +1,9 @@
-`leopaysjs` can be installed via [`yarn`](https://yarnpkg.com/en/)
+`@leopays-core/leopaysjs` can be installed via [`yarn`](https://yarnpkg.com/en/)
 ```javascript
-yarn add leopaysjs
+yarn add @leopays-core/leopaysjs
 ```
 
 or [`npm`](https://www.npmjs.com/)
 ```javascript
-npm install leopaysjs
+npm install @leopays-core/leopaysjs
 ```

@@ -9,11 +9,11 @@ Documentation can be found [here](https://leopays-core.github.io/leopaysjs)
 
 ### NPM
 
-The official distribution package can be found at [npm](https://www.npmjs.com/package/leopaysjs).
+The official distribution package can be found at [npm](https://www.npmjs.com/package/@leopays-core/leopaysjs).
 
 ### Add dependency to your project
 
-`yarn add leopaysjs`
+`yarn add @leopays-core/leopaysjs`
 
 ### Using with Typescript
 
@@ -40,16 +40,16 @@ Clone this repository locally then run `yarn build-web`.  The browser distributi
 
 Importing using ESM syntax is supported using TypeScript, [webpack](https://webpack.js.org/api/module-methods), or  [Node.js with `--experimental-modules` flag](https://nodejs.org/api/esm.html)
 ```js
-import { Api, JsonRpc, RpcError } from 'leopaysjs';
-import { JsSignatureProvider } from 'leopaysjs/dist/leopaysjs-jssig';           // development only
+import { Api, JsonRpc, RpcError } from '@leopays-core/leopaysjs';
+import { JsSignatureProvider } from '@leopays-core/leopaysjs/dist/leopaysjs-jssig';           // development only
 ```
 
 ### CommonJS
 
 Importing using commonJS syntax is supported by Node.js out of the box.
 ```js
-const { Api, JsonRpc, RpcError } = require('leopaysjs');
-const { JsSignatureProvider } = require('leopaysjs/dist/leopaysjs-jssig');      // development only
+const { Api, JsonRpc, RpcError } = require('@leopays-core/leopaysjs');
+const { JsSignatureProvider } = require('@leopays-core/leopaysjs/dist/leopaysjs-jssig');      // development only
 const fetch = require('node-fetch');                                    // node only; not needed in browsers
 const { TextEncoder, TextDecoder } = require('util');                   // node only; native TextEncoder/Decoder
 ```

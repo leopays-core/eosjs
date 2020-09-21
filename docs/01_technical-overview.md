@@ -1,6 +1,6 @@
-As stated in the [introduction](index.md), `leopaysjs` integrates with LeoPays blockchain using the [LeoPays Node RPC API](https://developers.leopays.dev/leopays-node/reference).
+As stated in the [introduction](index.md), `@leopays-core/leopaysjs` integrates with LeoPays blockchain using the [LeoPays Node RPC API](https://developers.leopays.dev/leopays-node/reference).
 
-In general, there are two objects that are used to interact with a blockchain via `leopaysjs`: the `JsonRpc` object, and the `Api` object.
+In general, there are two objects that are used to interact with a blockchain via `@leopays-core/leopaysjs`: the `JsonRpc` object, and the `Api` object.
 
 ## JsonRpc
 The `JsonRpc` object is typically used when signing is not necessary.  Some examples include [getting block information](how-to-guides/00_how-to-get-block-information.md), [getting transaction information](how-to-guides/02_how-to-get-transaction-information.md), or [getting table information](how-to-guides/09_how-to-get-table-information.md).  

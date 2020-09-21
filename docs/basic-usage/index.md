@@ -1,4 +1,4 @@
-The `leopaysjs` package provides two objects: an `Api` object and a `JsonRpc` object.  An explanation of their expected parameters and usage is provided below.
+The `@leopays-core/leopaysjs` package provides two objects: an `Api` object and a `JsonRpc` object.  An explanation of their expected parameters and usage is provided below.
 
 ## JsonRpc
 The `JsonRpc` object takes the node you wish to connect to in the form of a string as a required constructor argument, as well as an optional `fetch` object (see [CommonJS](01_commonjs.md) for an example).  

@@ -1,7 +1,7 @@
-To import `leopaysjs` using [ES module syntax](https://en.wikipedia.org/wiki/ECMAScript) the following code is provided.
+To import `@leopays-core/leopaysjs` using [ES module syntax](https://en.wikipedia.org/wiki/ECMAScript) the following code is provided.
 ```javascript
-import { Api, JsonRpc } from 'leopaysjs';
-import { JsSignatureProvider } from 'leopaysjs/dist/leopaysjs-jssig';  // development only
+import { Api, JsonRpc } from '@leopays-core/leopaysjs';
+import { JsSignatureProvider } from '@leopays-core/leopaysjs/dist/leopaysjs-jssig';  // development only
 
 const privateKeys = [privateKey1];
 

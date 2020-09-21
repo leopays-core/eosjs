@@ -1,4 +1,4 @@
-describe('leopaysjs web test', () => {
+describe('@leopays-core/leopaysjs web test', () => {
   it('loads', () => {
     cy.visit(('./src/tests/web.html'));
   });

@@ -1,4 +1,4 @@
-To use `leopaysjs` in a browser run `npm run build-web` or `yarn build-web`.  This will create the `dist-web` folder and web distribution modules.
+To use `@leopays-core/leopaysjs` in a browser run `npm run build-web` or `yarn build-web`.  This will create the `dist-web` folder and web distribution modules.
 ```html
 <pre style="width: 100%; height: 100%; margin:0px; "></pre>
 
