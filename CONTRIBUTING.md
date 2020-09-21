@@ -1,4 +1,4 @@
-# Contributing to LEOPAYSJS
+# Contributing to LeoPaysJS
 
 Interested in contributing? That's awesome! Here are some guidelines to get started quickly and easily:
 
@@ -6,7 +6,7 @@ Interested in contributing? That's awesome! Here are some guidelines to get star
   - [Bug Reports](#bug-reports)
   - [Feature Requests](#feature-requests)
   - [Change Requests](#change-requests)
-- [Working on LEOPAYSJS](#working-on-leopaysjs)
+- [Working on LeoPaysJS](#working-on-leopaysjs)
   - [Feature Branches](#feature-branches)
   - [Submitting Pull Requests](#submitting-pull-requests)
   - [Testing](#testing)
@@ -17,7 +17,7 @@ Interested in contributing? That's awesome! Here are some guidelines to get star
 
 ## Reporting An Issue
 
-If you're about to raise an issue because you think you've found a problem with LEOPAYSJS, or you'd like to make a request for a new feature in the codebase, or any other reason… please read this first.
+If you're about to raise an issue because you think you've found a problem with LeoPaysJS, or you'd like to make a request for a new feature in the codebase, or any other reason… please read this first.
 
 The GitHub issue tracker is the preferred channel for [bug reports](#bug-reports), [feature requests](#feature-requests), and [submitting pull requests](#submitting-pull-requests), but please respect the following restrictions:
 
@@ -52,13 +52,13 @@ Feature requests are welcome. Before you submit one be sure to have:
 
 ### Change Requests
 
-Change requests cover both architectural and functional changes to how LEOPAYSJS works. If you have an idea for a new or different dependency, a refactor, or an improvement to a feature, etc - please be sure to:
+Change requests cover both architectural and functional changes to how LeoPaysJS works. If you have an idea for a new or different dependency, a refactor, or an improvement to a feature, etc - please be sure to:
 
 1. **Use the GitHub search** and check someone else didn't get there first
 1. Take a moment to think about the best way to make a case for, and explain what you're thinking. Are you sure this shouldn't really be
    a [bug report](#bug-reports) or a [feature request](#feature-requests)?  Is it really one idea or is it many? What's the context? What problem are you solving? Why is what you are suggesting better than what's already there?
 
-## Working on LEOPAYSJS
+## Working on LeoPaysJS
 
 Code contributions are welcome and encouraged! If you are looking for a good place to start, check out the [good first issue](https://github.com/leopays-core/leopaysjs/labels/good%20first%20issue) label in GitHub issues.
 
@@ -69,7 +69,7 @@ Also, please follow these guidelines when submitting code:
 To get it out of the way:
 
 - **[develop](https://github.com/leopays-core/leopaysjs/tree/develop)** is the development branch. All work on the next release happens here so you should generally branch off `develop`. Do **NOT** use this branch for a production site.
-- **[master](https://github.com/leopays-core/leopaysjs/tree/master)** contains the latest release of LEOPAYSJS. This branch may be used in production. Do **NOT** use this branch to work on LEOPAYSJS's source.
+- **[master](https://github.com/leopays-core/leopaysjs/tree/master)** contains the latest release of LeoPaysJS. This branch may be used in production. Do **NOT** use this branch to work on LeoPaysJS's source.
 
 ### Submitting Pull Requests
 
@@ -77,15 +77,15 @@ Pull requests are awesome. If you're looking to raise a PR for something which d
 
 ### Testing
 
-LEOPAYSJS is used by many libraries across the LEOPAYS ecosystem, so proper testing is absolutely essential prior to opening a pull request. This can be done in LEOPAYSJS by running `yarn build-production`.  This command will build the distrubution bundles (`yarn build-all`) and test each environment accordingly (`yarn test-all`).
+LeoPaysJS is used by many libraries across the LeoPays ecosystem, so proper testing is absolutely essential prior to opening a pull request. This can be done in LeoPaysJS by running `yarn build-production`.  This command will build the distrubution bundles (`yarn build-all`) and test each environment accordingly (`yarn test-all`).
 
 #### Automated Unit Test Suite
 
-`yarn test` will run through the core functionality of each LEOPAYSJS module with Jest.
+`yarn test` will run through the core functionality of each LeoPaysJS module with Jest.
 
 #### Integration Test Suite
 
-Integration tests will only work with a local node running on port 8888 and with test accounts "bob" and "alice".  This can be accomplished by following the [LEOPAYS Developer Getting Started Guide](https://developers.leopays.dev/leopays-home/docs/getting-the-software#section-step-1-1-start-leopays-wallet).
+Integration tests will only work with a local node running on port 8888 and with test accounts "bob" and "alice".  This can be accomplished by following the [LeoPays Developer Getting Started Guide](https://developers.leopays.dev/leopays-home/docs/getting-the-software#section-step-1-1-start-leopays-wallet).
 
 ##### Web Environment
 
