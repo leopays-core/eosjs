@@ -1,6 +1,7 @@
 .DS_Store
-#dist/
-#dist-web/
+.idea
+dist/
+dist-web/
 node_modules/
 docs-build/
 *.tgz
@@ -8,4 +9,3 @@ docs-build/
 #cypress artifacts
 cypress/screenshots/
 cypress/videos/
-reports/
