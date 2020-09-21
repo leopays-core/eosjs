@@ -1,5 +1,5 @@
 {
-  "name": "leopaysjs",
+  "name": "@leopays-core/leopaysjs",
   "version": "0.1.0",
   "description": "Talk to LeoPays API",
   "license": "SEE LICENSE IN LICENSE",
@@ -41,7 +41,7 @@
   },
   "devDependencies": {
     "@blockone/eslint-config-blockone": "^3.0.0",
-    "@leopays-core/leopaysjs-ecc": "https://github.com/leopays-core/leopaysjs-ecc.git#v0.1.1",
+    "@leopays-core/leopaysjs-ecc": "^0.1.1",
     "@types/elliptic": "^6.4.12",
     "@types/jest": "^26.0.9",
     "@types/node": "^14.0.27",

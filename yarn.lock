@@ -531,9 +531,10 @@
     "@types/yargs" "^15.0.0"
     chalk "^4.0.0"
 
-"@leopays-core/leopaysjs-ecc@https://github.com/leopays-core/leopaysjs-ecc.git#v0.1.1":
+"@leopays-core/leopaysjs-ecc@^0.1.1":
   version "0.1.1"
-  resolved "https://github.com/leopays-core/leopaysjs-ecc.git#9f51eb84d66e2c94f61ef685ac83ed8de13e466b"
+  resolved "https://registry.yarnpkg.com/@leopays-core/leopaysjs-ecc/-/leopaysjs-ecc-0.1.1.tgz#230935aa7231538b5c5e858f6bd6d4fd5f9b6c78"
+  integrity sha512-RBkzYW3y7xQCt8GGwncllvcKghhkvBsuy5YEQJ+oPEscM+0X/qhmh+DaFhhEqyeitpfMX/BCioYG0CijvBdW0Q==
   dependencies:
     "@babel/runtime" "7.6.0"
     bigi "1.4.2"
