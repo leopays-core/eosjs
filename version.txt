@@ -1,1 +1,1 @@
-eosjs@v21.0.3 => leopaysjs@v0.1.0
+eosjs@v21.0.3 (2020.08.13) => leopaysjs@v0.1.0
