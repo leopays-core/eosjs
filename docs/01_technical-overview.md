@@ -1,4 +1,4 @@
-As stated in the [introduction](index.md), `leopaysjs` integrates with LeoPays blockchain using the [LeoPays Node RPC API](https://developers.eos.io/eosio-nodeos/reference).
+As stated in the [introduction](index.md), `leopaysjs` integrates with LeoPays blockchain using the [LeoPays Node RPC API](https://developers.leopays.dev/leopays-node/reference).
 
 In general, there are two objects that are used to interact with a blockchain via `leopaysjs`: the `JsonRpc` object, and the `Api` object.
 
