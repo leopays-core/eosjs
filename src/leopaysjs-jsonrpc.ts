@@ -3,8 +3,8 @@
  */
 // copyright defined in leopaysjs/LICENSE.txt
 
-import { AbiProvider, AuthorityProvider, AuthorityProviderArgs, BinaryAbi } from './eosjs-api-interfaces';
-import { base64ToBinary, convertLegacyPublicKeys } from './eosjs-numeric';
+import { AbiProvider, AuthorityProvider, AuthorityProviderArgs, BinaryAbi } from './leopaysjs-api-interfaces';
+import { base64ToBinary, convertLegacyPublicKeys } from './leopaysjs-numeric';
 import {
   GetAbiResult,
   GetBlockResult,
@@ -13,8 +13,8 @@ import {
   GetRawCodeAndAbiResult,
   PushTransactionArgs,
   GetBlockHeaderStateResult
-} from './eosjs-rpc-interfaces';
-import { RpcError } from './eosjs-rpcerror';
+} from './leopaysjs-rpc-interfaces';
+import { RpcError } from './leopaysjs-rpcerror';
 
 const arrayToHex = (data: Uint8Array) => {
   let result = '';

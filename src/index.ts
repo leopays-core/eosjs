@@ -1,9 +1,9 @@
-import { Api } from './eosjs-api';
-import * as ApiInterfaces from './eosjs-api-interfaces';
-import { JsonRpc } from './eosjs-jsonrpc';
-import * as Numeric from './eosjs-numeric';
-import * as RpcInterfaces from './eosjs-rpc-interfaces';
-import { RpcError } from './eosjs-rpcerror';
-import * as Serialize from './eosjs-serialize';
+import { Api } from './leopaysjs-api';
+import * as ApiInterfaces from './leopaysjs-api-interfaces';
+import { JsonRpc } from './leopaysjs-jsonrpc';
+import * as Numeric from './leopaysjs-numeric';
+import * as RpcInterfaces from './leopaysjs-rpc-interfaces';
+import { RpcError } from './leopaysjs-rpcerror';
+import * as Serialize from './leopaysjs-serialize';
 
 export { Api, ApiInterfaces, JsonRpc, Numeric, RpcInterfaces, RpcError, Serialize };

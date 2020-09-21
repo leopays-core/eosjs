@@ -5,8 +5,8 @@
 /* eslint-disable max-classes-per-file */
 /* eslint-disable jsdoc/check-indentation */
 
-import * as numeric from './eosjs-numeric';
-import { Abi, BlockTaposInfo, BlockHeaderStateTaposInfo } from './eosjs-rpc-interfaces';
+import * as numeric from './leopaysjs-numeric';
+import { Abi, BlockTaposInfo, BlockHeaderStateTaposInfo } from './leopaysjs-rpc-interfaces';
 
 /** A field in an abi */
 export interface Field {

@@ -5,13 +5,13 @@
 
 import { ec } from 'elliptic';
 
-import { SignatureProvider, SignatureProviderArgs } from './eosjs-api-interfaces';
+import { SignatureProvider, SignatureProviderArgs } from './leopaysjs-api-interfaces';
 import {
   PrivateKey,
   PublicKey,
   Signature,
-} from './eosjs-key-conversions';
-import { convertLegacyPublicKey } from './eosjs-numeric';
+} from './leopaysjs-key-conversions';
+import { convertLegacyPublicKey } from './leopaysjs-numeric';
 
 /** expensive to construct; so we do it once and reuse it */
 const defaultEc = new ec('secp256k1') as any;

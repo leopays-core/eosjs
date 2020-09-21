@@ -5,8 +5,8 @@ import {
   privateKeyToLegacyString,
   privateKeyToString,
   stringToPrivateKey,
-} from './eosjs-numeric';
-import { constructElliptic, PublicKey, Signature } from './eosjs-key-conversions';
+} from './leopaysjs-numeric';
+import { constructElliptic, PublicKey, Signature } from './leopaysjs-key-conversions';
 
 /** Represents/stores a private key and provides easy conversion for use with `elliptic` lib */
 export class PrivateKey {

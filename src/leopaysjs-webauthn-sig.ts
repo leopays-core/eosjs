@@ -3,9 +3,9 @@
  */
 // copyright defined in leopaysjs/LICENSE.txt
 
-import { SignatureProvider, SignatureProviderArgs } from './eosjs-api-interfaces';
-import * as ser from './eosjs-serialize';
-import * as numeric from './eosjs-numeric';
+import { SignatureProvider, SignatureProviderArgs } from './leopaysjs-api-interfaces';
+import * as ser from './leopaysjs-serialize';
+import * as numeric from './leopaysjs-numeric';
 import { ec } from 'elliptic';
 
 /** Signs transactions using WebAuthn */

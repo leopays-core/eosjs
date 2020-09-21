@@ -3,12 +3,12 @@ const ecc = require('@leopays-core/leopaysjs-ecc');
 
 const { ec } = require('elliptic');
 
-const { Signature, PrivateKey, PublicKey, sha256 } = require('../eosjs-key-conversions');
+const { Signature, PrivateKey, PublicKey, sha256 } = require('../leopaysjs-key-conversions');
 const {
   JsSignatureProvider,
-} = require('../eosjs-jssig');
-const { KeyType } = require('../eosjs-numeric');
-const { SignatureProviderArgs } = require('../eosjs-api-interfaces');
+} = require('../leopaysjs-jssig');
+const { KeyType } = require('../leopaysjs-numeric');
+const { SignatureProviderArgs } = require('../leopaysjs-api-interfaces');
 
 describe('JsSignatureProvider', () => {
   const privateKeys = [

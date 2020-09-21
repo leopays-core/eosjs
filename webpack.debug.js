@@ -2,10 +2,10 @@ const path = require('path');
 
 module.exports = {
   entry: {
-    leopaysjs_api: './src/eosjs-api.ts',
+    leopaysjs_api: './src/leopaysjs-api.ts',
     leopaysjs_jsonrpc: './src/rpc-web.ts',
-    leopaysjs_jssig: './src/eosjs-jssig.ts',
-    leopaysjs_numeric: './src/eosjs-numeric.ts',
+    leopaysjs_jssig: './src/leopaysjs-jssig.ts',
+    leopaysjs_numeric: './src/leopaysjs-numeric.ts',
   },
   devtool: 'inline-source-map',
   mode: 'development',

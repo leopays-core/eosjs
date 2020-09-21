@@ -3,7 +3,7 @@
  * copyright defined in leopaysjs/LICENSE.txt
  */
 
-import { Abi, PushTransactionArgs } from './eosjs-rpc-interfaces';
+import { Abi, PushTransactionArgs } from './leopaysjs-rpc-interfaces';
 
 /** Arguments to `getRequiredKeys` */
 export interface AuthorityProviderArgs {

@@ -1,7 +1,7 @@
 const ecc = require('@leopays-core/leopaysjs-ecc');
-import { ecc as eccMigration } from '../eosjs-ecc-migration';
+import { ecc as eccMigration } from '../leopaysjs-ecc-migration';
 
-import { PrivateKey } from '../eosjs-key-conversions';
+import { PrivateKey } from '../leopaysjs-key-conversions';
 
 describe('ecc Migration', () => {
   const privateKeys = [
