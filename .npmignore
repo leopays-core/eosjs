@@ -3,7 +3,6 @@
 
 # Include distribution bundle but exclude test files if they are built into dist
 !dist/**
-!dist-web/**
 *.test.*
 
 # Include documentation and version information in bundle
