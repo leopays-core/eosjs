@@ -41,7 +41,7 @@ Clone this repository locally then run `yarn build-web`.  The browser distributi
 Importing using ESM syntax is supported using TypeScript, [webpack](https://webpack.js.org/api/module-methods), or  [Node.js with `--experimental-modules` flag](https://nodejs.org/api/esm.html)
 ```js
 import { Api, JsonRpc, RpcError } from 'leopaysjs';
-import { JsSignatureProvider } from 'leopaysjs/dist/eosjs-jssig';           // development only
+import { JsSignatureProvider } from 'leopaysjs/dist/leopaysjs-jssig';           // development only
 ```
 
 ### CommonJS
@@ -49,7 +49,7 @@ import { JsSignatureProvider } from 'leopaysjs/dist/eosjs-jssig';           // d
 Importing using commonJS syntax is supported by Node.js out of the box.
 ```js
 const { Api, JsonRpc, RpcError } = require('leopaysjs');
-const { JsSignatureProvider } = require('leopaysjs/dist/eosjs-jssig');      // development only
+const { JsSignatureProvider } = require('leopaysjs/dist/leopaysjs-jssig');      // development only
 const fetch = require('node-fetch');                                    // node only; not needed in browsers
 const { TextEncoder, TextDecoder } = require('util');                   // node only; native TextEncoder/Decoder
 ```
