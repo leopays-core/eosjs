@@ -4,7 +4,7 @@ about: Create a report to help us improve
 
 ---
 
-**Version of LEOPAYSJS**
+**Version of LeoPaysJS**
 _which version of leopaysjs exhibits the issue_
 
 **Describe the bug**
