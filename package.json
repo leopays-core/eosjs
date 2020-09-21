@@ -23,7 +23,7 @@
     "cypress-ui": "cypress open",
     "prepare": "npm run build",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx src",
-    "test": "jest src/tests/*eosjs*",
+    "test": "jest src/tests/*leopaysjs*",
     "test-node": "jest src/tests/*node*",
     "test-all": "yarn test && yarn test-node && yarn cypress",
     "build": "rm -rf dist && tsc -p ./tsconfig.json && node scripts/copy-ripe-md.js",
