@@ -2,12 +2,12 @@
   "name": "@leopays-core/leopaysjs",
   "version": "0.1.2",
   "description": "Talk to LeoPays API",
-  "license": "SEE LICENSE IN LICENSE",
   "author": {
     "name": "LeoPays",
     "email": "developers@leopays.com",
     "url": "https://leopays.com/"
   },
+  "license": "MIT",
   "homepage": "https://github.com/leopays-core/leopaysjs#readme",
   "repository": {
     "type": "git",
